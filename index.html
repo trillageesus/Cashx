@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate LaunchPad Pro</title>
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>One-Click Money Machine</h1>
+        <p>Just sign up, click a button, and start earning. Even while you sleep!</p>
+        <button onclick="joinNow()">Join Now</button>
+    </header>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div><strong>Step 1</strong><br>Choose a product</div>
+            <div><strong>Step 2</strong><br>Generate link</div>
+            <div><strong>Step 3</strong><br>Share & earn!</div>
+        </div>
+    </section>
+
+    <section id="generate-link">
+        <h2>Instant Link Generator</h2>
+        <select id="product-select">
+            <option value="fitness">Top Fitness Offer</option>
+            <option value="finance">Best Finance Deal</option>
+            <option value="tech">Trending Tech Product</option>
+        </select>
+        <button onclick="generateLink()">Generate My Link</button>
+        <p id="affiliate-link-output" style="margin-top:10px; font-weight: bold;"></p>
+    </section>
+</body>
+</html>
